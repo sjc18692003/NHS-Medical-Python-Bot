@@ -38,7 +38,7 @@ if 'buffer_memory' not in st.session_state:
                                                                           k=3,
                                                                           return_messages=True)
             
-st.write(st.session_state)
+#st.write(st.session_state)
 
 template = """  Answer the question as truthfully as possible using the provided context, 
                 always keep track of the users name,
