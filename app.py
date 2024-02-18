@@ -3,17 +3,11 @@ import streamlit as st
 from streamlit_chat import message
 
 from langchain_openai import ChatOpenAI
-from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain_community.embeddings import HuggingFaceEmbeddings
-from langchain_community.document_loaders import PyPDFLoader
 from langchain.prompts import PromptTemplate
-from langchain.chains import LLMChain
 from langchain.chains import ConversationChain
 from langchain.memory import (
-    ConversationBufferWindowMemory,
-    CombinedMemory, 
-    ConversationSummaryMemory, 
-    ConversationBufferMemory
+    ConversationBufferWindowMemory
 )
 
 from langchain.chains.conversation.memory import ConversationBufferWindowMemory
@@ -24,17 +18,11 @@ from langchain.prompts import (
     MessagesPlaceholder
 )
 
-from langchain.chains import (
-    StuffDocumentsChain, LLMChain, ConversationalRetrievalChain
-)
-
-from langchain_community.vectorstores.chroma import Chroma
-from PyPDF2 import PdfReader
-
 from dotenv import load_dotenv
 
 load_dotenv()
 
+st.subheader("Python Assistant :python:")
 
 api_key=os.getenv('OPENAI_API_KEY')
 llm = ChatOpenAI(model="gpt-3.5-turbo",api_key=api_key)
