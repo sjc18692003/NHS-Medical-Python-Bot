@@ -31,8 +31,6 @@ from langchain.chains import (
 from langchain_community.vectorstores.chroma import Chroma
 from PyPDF2 import PdfReader
 
-from getpass import getpass
-from app import *
 
 api_key=os.getenv('OPENAI_API_KEY')
 llm = ChatOpenAI(openai_api_key=api_key, model_name="gpt-3.5-turbo")
