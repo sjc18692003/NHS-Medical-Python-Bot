@@ -22,7 +22,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-st.subheader("Python Assistant :python:")
+st.subheader("Python Assistant ")
 
 api_key=os.getenv('OPENAI_API_KEY')
 llm = ChatOpenAI(model="gpt-3.5-turbo",api_key=api_key)
