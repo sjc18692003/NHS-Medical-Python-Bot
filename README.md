@@ -41,9 +41,9 @@ The application follows these steps to provide responses to your questions:
 
 1. Setup: We first import necessary libraries then retrieve our OpenAI API key. You'll need to load your API_KEY to use this bot.
 
-2. Session State: Session_state is a streamlit object that exists in the memory for us to use. We use it in this project to store user queries, system responses and our chat history.
+2. Session State: Session_state is a streamlit object that exists in the memory for retrieval. We use it in this project to store user queries, system responses and our chat history.
 
-3. Memory: We Initialize [ConversationBufferWindowMemory](https://python.langchain.com/docs/modules/memory/types/buffer_window) a langchain library that acts as a form of keeping memory. It keeps a list of the interactions of the conversation over a selected window in a buffer and passes them to our prompts.
+3. Memory: We Initialize [ConversationBufferWindowMemory](https://python.langchain.com/docs/modules/memory/types/buffer_window) a langchain library that acts as a form of keeping memory. It keeps a list of the interactions of conversations over a selected window in a buffer and passes them to our prompts.
 
 4. Chat Prompts: Chat Prompts are instructions for the system that guide the the structure and content of the generated system message prompts. Prompts take in system and user templates. System templates determine the structure and content of the generated system message prompts. Human templates indicates that the template expects the user to provide some input, and this input will be incorporated into the generated prompts.
 
