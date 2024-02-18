@@ -31,9 +31,13 @@ from langchain.chains import (
 from langchain_community.vectorstores.chroma import Chroma
 from PyPDF2 import PdfReader
 
+from dotenv import load_dotenv
+
+load_dotenv()
+
 
 api_key=os.getenv('OPENAI_API_KEY')
-llm = ChatOpenAI(openai_api_key=api_key, model_name="gpt-3.5-turbo")
+llm = ChatOpenAI(model="gpt-3.5-turbo",api_key=api_key)
 
 if 'responses' not in st.session_state:
     st.session_state['responses'] = ["How can I assist you?"]
@@ -48,9 +52,9 @@ if 'buffer_memory' not in st.session_state:
             
 st.write(st.session_state)
 
-template = """  Make sure you remember the users name and always acknowledge it,
+template = """  Answer the question as truthfully as possible using the provided context, 
+                always keep track of the users name,
                 You are a python language expert,
-                don't answer questions outside python programming langiage, 
                 always introduce yourself as such, 
                 you are to provide code solutions to all python related questions
                 Chat_history:
