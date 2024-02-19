@@ -74,3 +74,9 @@ streamlit run app.py
 4. The application will launch in your defualt web browser, displaying the user interface.
 
 5. Asks questions relating to python in the chat interface
+
+Use this link to interact with chatbot:
+
+```bash
+https://python-assistant.streamlit.app/
+```
