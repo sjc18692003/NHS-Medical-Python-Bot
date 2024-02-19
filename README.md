@@ -77,4 +77,4 @@ streamlit run app.py
 
 Use this link to interact with chatbot:
 
-    https://python-assistant.streamlit.app/
+https://python-assistant.streamlit.app/
