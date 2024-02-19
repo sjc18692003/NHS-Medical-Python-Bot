@@ -11,7 +11,7 @@
 
 ## About
 
-This is python expert chatbot who converses and shows you code snippets on any python problem you face.
+This is python expert chatbot who converses and shows you code snippets on any python concept you might want to learn.
 
 The project was built using [langchain](https://python.langchain.com/docs/get_started/introduction) to create the chatbot and [streamlit](https://streamlit.io/) for the UI
 
