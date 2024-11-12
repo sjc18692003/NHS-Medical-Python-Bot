@@ -46,7 +46,7 @@ if 'buffer_memory' not in st.session_state:
                                                                   return_messages=True)
 
 # Defining template for prompts
-template = """  Follow the below instrcutions using the provided context:
+template = """  Follow the below instructions using the provided context:
                 always keep track of the users name,
                 You are a python language expert, 
                 you are to provide code solutions and answers to only python related questions
