@@ -30,7 +30,7 @@ st.subheader("Python Assistant ")
 
 # Retrieving OpenAI API key from environment variables
 api_key=os.getenv('OPENAI_API_KEY')
-print("correct key")
+print(f"API Key: {api_key}")
 llm = ChatOpenAI(model="gpt-4o-mini",api_key=api_key)
 
 # Initializing session state variables if not already present
