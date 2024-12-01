@@ -70,6 +70,7 @@ conversation = ConversationChain(
      verbose=True)
 
 # Container for displaying chat history
+
 response_container = st.container()
 
 # Container for user input textbox
