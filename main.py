@@ -209,7 +209,7 @@ def main():
             st.write(summary)
             
             # Display full conversation history
-            show_history(manager)
+            # show_history(manager)
 
             # st.text("Run Steps:")
             # st.code(manager.run_steps(), line_numbers=True)
